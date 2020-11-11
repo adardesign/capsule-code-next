@@ -48,7 +48,7 @@ const ImageInPicture = ({ initial = 50, thumb = 200, large = 900 }) => {
                     <div onClick={e => setState("initial")} className="close">❌ close</div>
                     <Image
                         onClick={e => setState("thumb")}
-                        src="https://via.placeholder.com/150"
+                        src="https://via.placeholder.com/850"
                         alt="Picture of the author"
                         width={sizes[state]}
                         height={sizes[state]}
@@ -68,7 +68,7 @@ const ImageInPicture = ({ initial = 50, thumb = 200, large = 900 }) => {
                     <div>
                         <Image
                             onClick={e => setState("thumb")}
-                            src="https://via.placeholder.com/150"
+                            src="https://via.placeholder.com/250"
                             alt="Picture of the author"
                             width={sizes[state]}
                             height={sizes[state]}
