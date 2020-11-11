@@ -12,11 +12,13 @@ export default function Home() {
       </Head>
 
       <h1>Image in Picture</h1>
+      <h2>Like Picture in Picture but for images / files</h2>
 
       images:
       <p>
         <ImageInPicture />
       </p>
+
     </div>
   )
 }
