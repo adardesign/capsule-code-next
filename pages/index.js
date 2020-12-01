@@ -1,7 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
 
-import ImageInPicture from '../src/components/imageInPicture/'
 
 export default function Home() {
   return (
@@ -11,14 +10,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Image in Picture</h1>
-      <h2>Like Picture in Picture but for images / files</h2>
-
-      images:
-      <p>
-        <ImageInPicture />
-      </p>
-
+      <nav>
+        <Link href="/image-in-picture/">
+          <a>Image in picture POC</a>
+        </Link>
+      </nav>
     </div>
-  )
+  );
 }
