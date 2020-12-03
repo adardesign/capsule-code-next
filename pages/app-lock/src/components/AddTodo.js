@@ -18,6 +18,8 @@ class AddTodo extends Component {
   }
 
   render() {
+    console.log("TEST")
+
     return (<div>
       <input type="text" value={this.state.value} onChange={(e) => this.handleChange(e.target.value)} />
       <button type="button" onClick={this.addTodo}>Add Todo</button>

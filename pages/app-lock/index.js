@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
 const DynamicApp = dynamic(() => import("./src/"), {
-  loading: () => <p>...</p>,
+  loading: () => <p>is it loading......</p>,
   ssr: false,
 });
 
