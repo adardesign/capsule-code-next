@@ -7,13 +7,11 @@ import TodoList from './TodoList';
 
 const App = ({todos, handleUpdateTodo, handleDeleteTodo, handleAddTodo}) => <div className="App">
   <div className="App-header">
-    <h2>React + Redux + Dexie Todo Example</h2>
+    <h2>App lock example - remebers for 10 seconds</h2>
   </div>
   <AddTodo handleAddTodo={handleAddTodo} />
   <TodoList
     todos={todos}
-    handleToggleTodo={handleUpdateTodo}
-    handleDeleteTodo={handleDeleteTodo}
   />
 </div>;
 
@@ -23,8 +21,6 @@ App.propTypes = {
     id: PropTypes.number.isRequired,
     done: PropTypes.bool,
   })),
-  handleUpdateTodo: PropTypes.func.isRequired,
-  handleDeleteTodo: PropTypes.func.isRequired,
   handleAddTodo: PropTypes.func.isRequired,
 };
 
