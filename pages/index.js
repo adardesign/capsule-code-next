@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 
-
 export default function Home() {
   return (
     <div>
@@ -11,9 +10,18 @@ export default function Home() {
       </Head>
 
       <nav>
-        <Link href="/image-in-picture/">
-          <a>Image in picture POC</a>
-        </Link>
+        <ul>
+          <li>  
+          <Link href="/image-in-picture/">
+            <a>Image in picture POC</a>
+          </Link>
+          </li>
+          <li>
+            <Link href="/app-lock/">
+              <a>App lock</a>
+            </Link>
+          </li>
+        </ul>
       </nav>
     </div>
   );

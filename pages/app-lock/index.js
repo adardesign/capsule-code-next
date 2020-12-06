@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
-const DynamicApp = dynamic(() => import("./src/"), {
+const DynamicApp = dynamic(() => import("../../src/appLock/"), {
   loading: () => <p>is it loading......</p>,
   ssr: false,
 });
